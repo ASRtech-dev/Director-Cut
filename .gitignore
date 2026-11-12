@@ -1,0 +1,45 @@
+# Dependencies
+node_modules/
+server/node_modules/
+
+# Build outputs
+dist/
+src-tauri/target/
+src-tauri/gen/
+
+# Installers and binaries
+installers/
+*.exe
+*.msi
+*.dmg
+*.AppImage
+
+# Local logs and temporary files
+*.log
+src-tauri/*.log
+src-tauri/*.txt
+.DS_Store
+Thumbs.db
+
+# Local Cargo override (contains machine-specific target-dir)
+src-tauri/.cargo/config.toml
+
+# Runtime databases, snapshots, and secrets
+server/*.db
+server/*.db-shm
+server/*.db-wal
+server/snapshots/
+*.sqlite
+*.sqlite3
+*.sqlite-shm
+*.sqlite-wal
+.env
+.env.*
+!.env.example
+credentials.json
+client_secret*.json
+token.json
+
+# Source Word documents & temp extraction folders (Markdown seeds live in src/prompts/seed/)
+new docs/
+src/prompts/seed/01_unzipped/
